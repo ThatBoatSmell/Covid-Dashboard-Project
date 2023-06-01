@@ -1,0 +1,100 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+## Stages of the project
+
+### Initial Discussion and Definitions
+
+Upon receiving the project brief on Thursday we entered into the planning stage of the project
+where we discussed the brief, broke down the project into two main sections and defined some
+candidate key performance indicators (KPI's). 
+Using Excalidraw we wrote down our definition of the media's "Winter Crisis", 
+being an increase pressure on the NHS due to increases in seasonal and respiratory 
+illnesses in the winter months. Our two main sections were the effects of this pre-2020
+and post-2020. We also decided on our working hours being 9-5 on weekdays with a few hours of solo work in the evening.
+We also agreed to only work 4-6 hours each over the coming weekend.
+
+We then determined a plan for cleaning the data and each examined two of the 
+provided data sets from Public Health Scotland to determine some candidate KPI's. 
+
+
+We  narrowed this down to our final KPIs being:
+
+- the number of episodes (as a proxy for number of admissions), 
+- average length of patient hospital stay,
+- percentage of hospital bed occupancy.
+
+After deciding our KPI's to looking at the data we also drew some graphical representations
+to what we expected this trend to look like, deciding that we wanted to segment the 
+data into pre-2020 (2017-2019) vs post-2020 (2020-2022) for each metric. 
+
+### Dashboard Wire frame 
+We then began to put together a wire frame image of MVP version of the  app to look 
+choosing to look at sections relating to temporal trends, geographical trends and 
+trends in demographics for each of our KPIs. We also discussed how we would like 
+to present the data and which chart types we wished to use. 
+
+### GitHub
+We also at this point set up a Git repository with each of us having a designated 
+"development" branch for each group member separate from the main branch. We did not have set times
+for merging branches together except for the end of each day but would come together to communicate and
+make sure everyone was working on the same version of the app and work through any merge conflicts.
+
+### Data Selection
+We decided on the data sets we would analyse and then divided up the work evenly 
+between each group member for the weekend with Cailean putting together a "skeleton" for the app 
+and the rest of us analysing the data for either temporal, geographical or demographic trends.
+We then cleaned our individual data sets with the goal over the weekend to have a selection of 
+graphs and analysis to choose from to add to the app the following week.
+
+We also put together a rough plan of our goals for the following week and decided we 
+would try to have 3 main versions of the app finished at the end of each day 
+and then go back to improve or change the previous day's app. We decided to have 
+3 short meetings a day to keep each other up to date and troubleshoot.
+
+### Shiny App Version 1
+
+After the weekend we came together to put the first version of the app together 
+and took it in turns to work with Cailean to update his app skeleton. David also 
+combined all our cleaning scripts for each data set into one usable file. After 
+putting the app together we also planned Monday evening's work to further improve 
+the app and decided to consult with the instructors regarding the statistical 
+analysis we wished to perform and add to the app. 
+
+### Shiny App Version 2
+Tuesday during the day we all worked on our respective areas adding increased 
+functionality to the app in terms of selections and drop down menus. Cailean also
+took responsibility for looking at differences in hospital specialties as part of 
+our analysis. David performed some of the initial statistical analyses for the app
+and Stuart and Kirsty began to piece together the project presentation. By the end of
+the day we had a second working version of the app with added statistics and updated plots.
+We then designated responsibilities for the evening which included Stuart working on
+app aesthetics and formatting, Cailean updating the formatting of the app and Kirsty
+adding a Geographical heat map.
+
+### Shiny App Version 3
+
+On Wednesday we continued to improve the aesthetics of the app, making additions to the 
+layout and graphs as well as adding the specialty graphs from Cailean. We also worked on the presentation
+and spent the afternoon working out bugs with the app to make sure all our functions and 
+additions worked as we wanted. By the end of the day we had an almost finished version of the app
+and we decided in the evening to add labels and text to each of the tabs in the app we had been working on
+and Stuart also added in some additional statistical analysis.
+
+### Final App and Presentation
+
+On the Thursday morning we did a final run of the app checking all functionality 
+and doing minor updates to the aesthetics. Afterwards we focused on completing our
+presentation and presentation practice. 
+
+## How is the data stored and structured?
+The data is in the form csv files which are accessible for download on the Public 
+Health Scotland website. They are also accessible via the website as an interactive dashboard and you can manipulate certain variables to plot graphs. The data does not contain any personal identifiable or sensitive information therefore working with these data sets did not raise any ethical concerns.
+
+The data on Public Health Scotland is also known as Linked Data. This means in simple terms that this data can be linked to and any unique data point in a linked data set should have a unique URL. This is beneficial in that the data point can be easily browsed on a web page and referenced in other linked data sets. 
+The principle behind linked data is that each data point is formed of three peices of information the subject-predicate -object arrangement. The subject and object are joined by the predicate and together may form a statement 
+
+ie subject = Steve, predicate = hasHairColour, object = red.
+
